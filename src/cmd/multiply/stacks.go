@@ -1,12 +1,12 @@
 package main
 
-type stack []cell
+type stack []int
 
-func (s *stack) push(c cell) {
+func (s *stack) push(c int) {
 	*s = append(*s, c)
 }
 
-func (s *stack) pop() cell {
+func (s *stack) pop() int {
 	ret := (*s)[len(*s)-1]
 	*s = (*s)[:len(*s)-1]
 	return ret

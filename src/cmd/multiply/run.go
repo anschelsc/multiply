@@ -13,7 +13,7 @@ func exec(index int) {
 
 func run() {
 	for {
-		pc++         // When exec is run,
-		exec(pc - 1) // pc is the next instruction.
+		pc++
+		exec(pc - 1)
 	}
 }
